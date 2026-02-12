@@ -1,0 +1,212 @@
+.results {
+  width: 100%;
+  max-width: 800px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+.results-header {
+  text-align: center;
+  width: 100%;
+}
+
+.results-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.results-stats {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px 40px;
+  min-width: 140px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.no-likes,
+.all-likes {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 10px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.liked-cats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.liked-cat-card {
+  position: relative;
+  aspect-ratio: 4/5;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.liked-cat-card:hover {
+  transform: scale(1.05);
+}
+
+.liked-cat-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.liked-overlay {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.heart-icon {
+  font-size: 1.2rem;
+}
+
+.restart-btn {
+  margin-top: 20px;
+  padding: 16px 48px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: white;
+  color: #667eea;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.restart-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.restart-btn:active {
+  transform: translateY(0);
+}
+
+.restart-icon {
+  font-size: 1.3rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.restart-btn:hover .restart-icon {
+  transform: rotate(180deg);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .results-title {
+    font-size: 2rem;
+  }
+
+  .results-stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .stat-card {
+    padding: 15px 30px;
+    min-width: 120px;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .liked-cats-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+  }
+
+  .restart-btn {
+    padding: 14px 40px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .results-title {
+    font-size: 1.8rem;
+  }
+
+  .stat-card {
+    padding: 12px 25px;
+    min-width: 100px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+  }
+
+  .liked-cats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .no-likes,
+  .all-likes {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .restart-btn {
+    padding: 12px 32px;
+    font-size: 0.95rem;
+  }
+}
