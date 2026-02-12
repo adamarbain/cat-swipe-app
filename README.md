@@ -14,7 +14,7 @@ A fun and interactive web application that helps you discover your cat preferenc
 
 ## 🚀 Live Demo
 
-[View Live Demo](#) *(Add your GitHub Pages link here)*
+[View Live Demo](#) *(https://adamarbain.github.io/cat-swipe-app/)*
 
 ## 🛠️ Tech Stack
 
@@ -28,7 +28,7 @@ A fun and interactive web application that helps you discover your cat preferenc
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/adamarbain/cat-swipe-app.git
 cd cat-swipe-app
 ```
 
@@ -112,25 +112,13 @@ npm run build
 npm run deploy
 ```
 
-## 🎓 Assignment Details
-
-This project was created as part of a technical assessment for Netizen Testing Sdn Bhd.
-
-**Requirements Met:**
-- Single-page web application ✅
-- Swipe gestures (right = like, left = dislike) ✅
-- Summary screen with liked cats ✅
-- Cat images from Cataas API ✅
-- Mobile-optimized experience ✅
-- Hosted on GitHub Pages ✅
-
 ## 📝 License
 
 © 2025 - Created for Netizen Testing Sdn Bhd assessment
 
 ## 👤 Author
 
-[Your Name]
+[Adam Arbain]
 
 ---
 
